@@ -1,7 +1,7 @@
 <template>
   <div class="bg-gray-700-spotify flex-none h-22 px-5 flex items-center justify-between">
     <div class="flex items-center">
-      <a href="#"><img :src="artists[0].image[1]['#text']" alt="album cover" class="w-14 h-14"></a>
+      <a href="#"><img v-lazy="artists[0].image[1]['#text']" alt="album cover" class="w-14 h-14"></a>
       <div class="ml-3">
         <div><a href="#" class="hover:underline">Name of Song</a></div>
         <div><a href="#" class="text-xs text-gray-500 hover:underline hover:text-white">Artist Name</a></div>

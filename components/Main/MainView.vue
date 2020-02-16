@@ -13,7 +13,7 @@
               :key="index"
               class="w-1/5 px-4">
               <div>
-                <a :href="artist.url"><img :src="artist.image[2]['#text']" alt="album cover"></a>
+                <a :href="artist.url"><img v-lazy="artist.image[2]['#text']" alt="album cover"></a>
               </div>
               <div>
                 <a :href="artist.url" class="font-semibold block hover:text-white mt-2">{{ artist.name }}</a>
@@ -31,7 +31,7 @@
               :key="index"
               class="w-1/5 px-4">
               <div>
-                <a :href="artist.url"><img :src="artist.image[2]['#text']" alt="album cover"></a>
+                <a :href="artist.url"><img v-lazy="artist.image[2]['#text']" alt="album cover"></a>
               </div>
               <div>
                 <a :href="artist.url" class="font-semibold block hover:text-white mt-2">{{ artist.name }}</a>
@@ -49,7 +49,7 @@
               :key="index"
               class="w-1/5 px-4">
               <div>
-                <a :href="artist.url"><img :src="artist.image[2]['#text']" alt="album cover"></a>
+                <a :href="artist.url"><img v-lazy="artist.image[2]['#text']" alt="album cover"></a>
               </div>
               <div>
                 <a :href="artist.url" class="font-semibold block hover:text-white mt-2">{{ artist.name }}</a>
