@@ -35,6 +35,7 @@ export default {
   buildModules: [
     // Doc: https://github.com/nuxt-community/nuxt-tailwindcss
     '@nuxtjs/tailwindcss',
+    '@nuxtjs/dotenv',
   ],
   /*
   ** Nuxt.js modules
@@ -59,5 +60,9 @@ export default {
     */
     extend (config, ctx) {
     }
+  },
+  env: {
+    API_ROOT_URL: process.env.API_ROOT_URL,
+    API_KEY: process.env.API_KEY
   }
 }
